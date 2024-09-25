@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django_otp.admin import OTPAdminSite
 
-admin.site.__class__ = OTPAdminSite
+admin.site.__class__ = OTPAdminSite # Comment this out for admin access
 
 urlpatterns = [
     path('admin/', admin.site.urls),
